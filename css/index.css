@@ -1,0 +1,310 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 250px;;
+  margin:20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.flex-box{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+
+
+
+.card .container {
+  padding: 2px 16px;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 300px;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 37px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  .
+}
+
+.search-bar{
+  border:solid red;
+  display: inline;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  left: 100%;
+  top: 150%;
+  position: absolute;
+
+}
+
+
+/* /////////////nav//////////////////////// */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.4s;
+    font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Navbar section */
+
+.nav{
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+    background-color: rgba(0,0,255,0.8);
+}
+
+.nav div.logo{
+    width: 180px;
+    height: 10px;
+    display: flex;
+    flex-wrap:wrap;
+    position: absolute;
+}
+
+.nav div.logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.nav div.logo a:hover {
+    color: #c0c0c0;
+}
+
+.nav div.main_list{
+    width: 600px;
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul{
+    width:100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+}
+
+.nav div.main_list ul li{
+    width: 120px;
+    height: 65px;
+}
+
+.nav div.main_list ul li a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    text-transform: uppercase;
+}
+
+.nav div.main_list ul li a:hover{
+    color: #c0c0c0;
+}
+
+.nav div.media_button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    display: none;
+}
+
+.nav div.media_button button.main_media_button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.nav div.media_button button.main_media_button span{
+    width: 98%;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(1){
+    transform: rotateY(180deg);
+    transition: all 0.5s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(2){
+    transform: rotateY(180deg);
+    transition: all 0.4s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(3){
+    transform: rotateY(180deg);
+    transition: all 0.3s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.active span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.nav div.media_button button.active span:nth-of-type(2) {
+    display: none;
+}
+
+.nav div.media_button button.active span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 20deg);
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -20deg);
+}
+
+/* Home section */
+
+.home{
+    width: 100%;
+    height: 100vh;
+    padding-top:100px;
+    background-color: #ddd;
+}
+
+/* Medai qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .container{
+        margin: 0;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:768px) {
+.wrap{
+/* border:solid red; */
+width:103vw;
+padding:10px;
+margin:0;
+background-color:rgba(0,0,255,0.8);
+
+margin-left:-12px;
+}
+    .container{
+        margin: 0;
+    }
+
+    .nav div.logo{
+        margin-left: 15px;
+    }
+
+    .nav div.main_list{
+        width: 100%;
+        margin-top: 65px;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    .nav div.show_list{
+        height: 200px;
+    }
+
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,255,0.8);
+    }
+
+    .nav div.main_list ul li a{
+      text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+    }
+
+    .nav div.media_button{
+        display: block;
+    }
+}
